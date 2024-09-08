@@ -7,10 +7,11 @@ form?.addEventListener('submit', (event) => {
     const name = (document.getElementById('name') as HTMLInputElement).value;
     const email = (document.getElementById('email') as HTMLInputElement).value;
     const skills = (document.getElementById('skills') as HTMLInputElement).value;
+    const education = (document.getElementById('education') as HTMLInputElement).value;
     const workExperience = (document.getElementById('workExperience') as HTMLInputElement).value;
 
 
-    if (name === '' || email === '' || skills === '' || workExperience === '') {
+    if (name === '' || email === '' || education === ''|| skills === '' || workExperience === '') {
         alert('Please fill all mandatory fields.');
         return;
     }
@@ -20,6 +21,7 @@ form?.addEventListener('submit', (event) => {
     resumeContainer.innerHTML = `
         <h2 contenteditable="true">${name}</h2>
         <p><strong>Email:</strong> <span contenteditable="true">${email}</span></p>
+           <p><strong>Education:</strong> <span contenteditable="true">${education}</span></p>
         <p><strong>Skills:</strong> <span contenteditable="true">${skills}</span></p>
         <p><strong>Work Experience:</strong> <span contenteditable="true">${workExperience}</span></p>
     `;
@@ -29,4 +31,4 @@ form?.addEventListener('submit', (event) => {
             console.log(`${element.textContent} has been edited.`);
         });
     });
-});
+})
