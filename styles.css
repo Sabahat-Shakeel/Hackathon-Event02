@@ -39,6 +39,12 @@ input:focus {
   }
   
 
+input::placeholder {
+  color: #000; 
+  opacity: 0.4; 
+}
+
+
 button {
     padding: 10px 15px;
     background-color: #5fa8d3;
