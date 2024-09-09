@@ -37,9 +37,13 @@ input:focus {
     border: 2px solid transparent;
     outline: none;
   }
+  
+:placeholder-shown{
+    font-weight: 600;
+  }
 
 input::placeholder {
-opacity: 0.4
+opacity: 0.4;
 }
 
 
