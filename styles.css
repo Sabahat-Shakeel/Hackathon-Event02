@@ -37,11 +37,9 @@ input:focus {
     border: 2px solid transparent;
     outline: none;
   }
-  
 
 input::placeholder {
-  color: #000; 
-  opacity: 0.4; 
+opacity: 0.4
 }
 
 
